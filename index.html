@@ -76,7 +76,7 @@
     }
   </style>
   <link rel="icon" type="image/png" href="seal_icon.png">
-  <title>Rulin Shao</title>
+  <title>Yucheng Li</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <script src="./utils.js"></script>
@@ -90,44 +90,26 @@
           <tr>
             <td width="67%" valign="middle">
               <p align="center">
-                <name>Rulin Shao</name>
+                <name>Yucheng Li</name>
               </p>
               <p>
-                I am a first-year PhD at University of Washington advised by Prof. <a href="https://koh.pw/"> Pang Wei Koh </a> and Prof. <a href="https://www.cs.washington.edu/people/faculty/lsz"> Luke Zettlemoyer </a>. 
-                I worked as an applied scientist at AWS, focusing on large-scale pretraining for <a href="https://aws.amazon.com/bedrock/"> Amazon Bedrock </a>, from January 2023 to June 2023.
-                I obtained my master in Machine Learning at CMU advised by Prof. <a href="http://www.cs.cmu.edu/~epxing/"> Eric Xing </a>. I did my undergraduate in Mathematics at XJTU.
+                I am a PhD student at the <strong>University of Surrey</strong>, co-affiliated at the NLP group in the <strong>University of Manchester</strong>, supervised by Dr. <a href="https://www.surrey.ac.uk/people/frank-guerin">Frank Guerin</a> and Prof. <a href="https://chenghualin.wordpress.com">Chenghua Lin</a>.
+                Before starting my PhD in 2021, I obtained my MsC degree at East China Normal University and BsC degree at Shanghai Normal University.</p>
+                <p>
+                My research interests are Natural Language Processing (NLP), especially <strong>LLMs evaluation</strong>, <strong>metaphor processing</strong> and more recently <strong>efficient LLMs</strong>.
                 <br>
                 <br>
-                I'm interested in the scaling properties and robustness of retrieval-based LMs, and the efficient system design to make large-scale retrieval more accessible to academics. I am also interested in long-context chatbots and vision-language models.
               </p>
               <p align=center>
-                <a href="https://scholar.google.com/citations?user=Vdwh6bcAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/RulinShao"> GitHub </a> &nbsp/&nbsp
-                <a href="https://twitter.com/RulinShao"> Twitter </a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/rulin-shao-966435191/"> Linkdin </a> &nbsp/&nbsp
-                <a href="mailto: rulins@cs.washington.edu"> Email </a>
+                <a href="https://scholar.google.com/citations?user=6lwf5TcAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/liyucheng09"> GitHub </a> &nbsp/&nbsp
+                <a href="https://www.zhihu.com/people/li-yu-cheng-15"> 知乎 </a> &nbsp/&nbsp
+                <a href="https://twitter.com/liyucheng_2"> Twitter </a> &nbsp/&nbsp
+                <a href="mailto: yucheng.li@surrey.ac.uk"> Email </a>
               </p>
             </td>
             <td width="33%">
               <img src="selfie.jpg" style="width: 100%;">
-            </td>
-          </tr>
-        </table>
-
-
-        <!-- News -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="60%" valign="middle">
-              <heading>News</heading>
-              <ul>
-                <li> <b>2023-10</b> Gave a talk at AWS on Long-context LLMs! <a href="https://drive.google.com/file/d/1d2St0r72ksgwLfTmc78uhXGq_JJR9l2e/view?usp=sharing"> [slides] </a> </li>
-                <li> <b>2023-10</b> Gave a talk at SAMPL Lab on scaling up retrieval-based language models! </li>
-                <li> <b>2023-10</b> Introducing <a href="https://arxiv.org/abs/2310.03294v1"> LightSeq </a>, a better sequence parallelism solution for long-context LLM training! It is highly optimized for decoders, and it does not entangle with the model architecture, allowing you to scale up your sequence length without an upper bound! </li>
-                <li> <b>2023-08</b> Introducing <a href="https://visit-bench.github.io/"> VisIT-Bench </a>, a new vision-language instruction following benchmark inspired by real-world use cases. </li>
-                <li> <b>2023-06</b> Introducing our latest work on the long-context models (LongChat) and benchmark (LongEval) in this <a href="https://lmsys.org/blog/2023-06-29-longchat/"> LMSys blog </a>! Stay tuned! </li>
-                <li> <b>2023-01</b> I graduated from CMU and joined AWS as a full-time Applied Scientist! </li>
-              </ul>
             </td>
           </tr>
         </table>
@@ -138,208 +120,212 @@
             <td width="100%" valign="middle">
               <heading>Research </heading>
               <p>
-                
           </tr>
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-          <!-- Projects -->
-
           <tr>
-            <td width="25%" id="lightseq-img"></td>
-            <td valign="top" width="75%" id="lightseq-txt"></td>
+            <td width="25%" id="contamination-detector-img"></td>
+            <td valign="top" width="75%" id="contamination-detector-txt"></td>
           </tr>
           <script type="text/javascript">
             createProjectElement(
-              id = "lightseq", {
-              title: "LightSeq: Sequence Level Parallelism for Distributed Training of Long Context Transformers",
-              paper_url: "https://arxiv.org/abs/2310.03294v1",
-              authors: "Dacheng Li*, <b> Rulin Shao* </b>, Anze Xie, Eric P. Xing, Joseph E. Gonzalez, Ion Stoica, Xuezhe Ma, Hao Zhang",
-              conference: "Preprint",
-              image: "figures/lightseq.gif",
-              others: null
-            });
-          </script>
-          
-          <tr>
-            <td width="25%" id="visit-bench-img"></td>
-            <td valign="top" width="75%" id="visit-bench-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "visit-bench", {
-              title: "VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use",
-              paper_url: "https://arxiv.org/abs/2308.06595",
-              authors: "Yonatan Bitton*, Hritik Bansal*, Jack Hessel*, <b> Rulin Shao </b>, Wanrong Zhu, Anas Awadalla, Josh Gardner, Rohan Taori, Ludwig Schimdt",
-              conference: "NeurIPS 2023 Datasets and Benchmarks track",
-              image: "figures/visit-bench.PNG",
+              id = "contamination-detector", {
+              title: "An Open Source Data Contamination Report for Large Language Models",
+              paper_url: "https://github.com/liyucheng09/Contamination_Detector",
+              authors: "<b>Yucheng Li</b>",
+              conference: "preprint",
+              image: "figures/cd.png",
+              code: "https://github.com/liyucheng09/Contamination_Detector",
+              zhihu: "https://zhuanlan.zhihu.com/p/666490713",
               others: null
             });
           </script>
 
           <tr>
-            <td width="25%" id="longchat-img"></td>
-            <td valign="top" width="75%" id="longchat-txt"></td>
+            <td width="25%" id="LatestEval-img"></td>
+            <td valign="top" width="75%" id="LatestEval-txt"></td>
           </tr>
           <script type="text/javascript">
             createProjectElement(
-              id = "longchat", {
-              title: "How Long Can Open-Source LLMs Truly Promise on Context Length?",
-              paper_url: "https://lmsys.org/blog/2023-06-29-longchat/",
-              authors: "Dacheng Li*, <b> Rulin Shao* </b>, Anze Xie, Ying Sheng, Lianmin Zheng, Joseph E. Gonzalez, Ion Stoica, Xuezhe Ma, and Hao Zhang",
-              conference: "Blog",
-              image: "figures/longchat.PNG",
+              id = "LatestEval", {
+              title: "LatestEval: Addressing Data Contamination in Language Model Evaluation through Dynamic and Time-Sensitive Test Construction",
+              paper_url: "https://arxiv.org/abs/2312.12343",
+              authors: "<b>Yucheng Li</b>, Frank Guerin, Chenghua Lin",
+              conference: "AAAI 2024",
+              image: "figures/latesteval.png",
+              code: "https://github.com/liyucheng09/LatestEval",
               others: null
             });
           </script>
 
           <tr>
-            <td width="25%" id="cacr_acl23-img"></td>
-            <td valign="top" width="75%" id="cacr_acl23-txt"></td>
+            <td width="25%" id="selective-context-img"></td>
+            <td valign="top" width="75%" id="selective-context-txt"></td>
           </tr>
           <script type="text/javascript">
             createProjectElement(
-              id = "cacr_acl23", {
-              title: "Cross-modal Attention Congruence Regularization for Vision-Language Relation Alignment",
+              id = "selective-context", {
+              title: "Compressing Context to Enhance Inference Efficiency of Large Language Models",
               paper_url: "https://arxiv.org/abs/2212.10549",
-              authors: "Rohan Pandey, <b> Rulin Shao </b>, Paul Pu Liang, Ruslan Salakhutdinov, Louis-Philippe Morency",
+              authors: "<b>Yucheng Li</b>, Bo Peng, Frank Guerin, Chenghua Lin",
+              conference: "EMNLP 2023",
+              image: "figures/sc.png",
+              code: "https://github.com/liyucheng09/Selective_Context",
+              zhihu: "https://zhuanlan.zhihu.com/p/625440016",
+              others: null
+            });
+          </script>
+
+          <tr>
+            <td width="25%" id="acl23-img"></td>
+            <td valign="top" width="75%" id="acl23-txt"></td>
+          </tr>
+
+          <script type="text/javascript">
+            createProjectElement(
+              id = "acl23", {
+              title: "Metaphor Detection via Explicit Basic Meanings Modelling",
+              paper_url: "https://aclanthology.org/2023.acl-short.9/",
+              authors: "<b>Yucheng Li</b>, Shun Wang, Chenghua Lin, Frank Guerin",
               conference: "ACL 2023",
-              image: "figures/acl_23.PNG",
-              others: null
+              image: "figures/acl23.png",
+              code: "https://github.com/liyucheng09/BasicBERT",
             });
           </script>
 
           <tr>
-            <td width="25%" id="mpc_iclr23-img"></td>
-            <td valign="top" width="75%" id="mpc_iclr23-txt"></td>
+            <td width="25%" id="framebert-img"></td>
+            <td valign="top" width="75%" id="framebert-txt"></td>
           </tr>
+
           <script type="text/javascript">
             createProjectElement(
-              id = "mpc_iclr23", {
-              title: "MPCFormer: fast, performant and private Transformer inference with MPC",
-              paper_url: "https://arxiv.org/abs/2211.01452",
-              authors: "Dacheng Li*, <b> Rulin Shao* </b>, Hongyi Wang*, Han Guo, Eric P Xing, Hao Zhang",
-              conference: "ICLR 2023 (Spotlight)",
-              image: "figures/iclr_23.PNG",
-              others: null
+              id = "framebert", {
+              title: "FrameBERT: Conceptual Metaphor Detection with Frame Embedding Learning",
+              paper_url: "https://aclanthology.org/2023.eacl-main.114.pdf",
+              authors: "<b>Yucheng Li</b>, Shun Wang, Chenghua Lin, Frank Guerin, Loic Barrault",
+              conference: "EACL 2023",
+              image: "figures/framebert.png",
+              code: "https://github.com/liyucheng09/MetaphorFrame",
             });
           </script>
 
           <tr>
-            <td width="25%" id="vit_tmlr-img"></td>
-            <td valign="top" width="75%" id="vit_tmlr-txt"></td>
+            <td width="25%" id="roppt-img"></td>
+            <td valign="top" width="75%" id="roppt-txt"></td>
           </tr>
+
           <script type="text/javascript">
             createProjectElement(
-              id = "vit_tmlr", {
-              title: "On the adversarial robustness of vision transformers",
-              paper_url: "https://arxiv.org/abs/2103.15670",
-              authors: "<b> Rulin Shao </b>, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, Cho-Jui Hsieh",
-              conference: "Transactions on Machine Learning Research (TMLR)",
-              image: "figures/tmlr_23.PNG",
-              others: null
+              id = "roppt", {
+              title: "Metaphor Detection via Explicit Basic Meanings Modelling",
+              paper_url: "https://aclanthology.org/2023.eacl-main.102.pdf",
+              authors: "Shun Wang, <b>Yucheng Li</b>, Chenghua Lin, Loic Barrault, Frank Guerin",
+              conference: "EACL 2023",
+              image: "figures/roppt.png",
+              code: "https://github.com/MajiBear000/RoPPT",
             });
           </script>
 
           <tr>
-            <td width="25%" id="captcha_bigdata-img"></td>
-            <td valign="top" width="75%" id="captcha_bigdata-txt"></td>
+            <td width="25%" id="sentiment-img"></td>
+            <td valign="top" width="75%" id="sentiment-txt"></td>
           </tr>
+
           <script type="text/javascript">
             createProjectElement(
-              id = "captcha_bigdata", {
-              title: "Robust text captchas using adversarial examples",
-              paper_url: "https://ieeexplore.ieee.org/abstract/document/10021100",
-              authors: "<b> Rulin Shao </b>, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, Cho-Jui Hsieh",
-              conference: "2022 IEEE International Conference on Big Data (Big Data)",
-              image: "figures/bigdata_23.PNG",
-              others: null
+              id = "sentiment", {
+              title: "The Secret of Metaphor on Expressing Stronger Emotion",
+              paper_url: "https://aclanthology.org/2022.flp-1.6/",
+              authors: "<b>Yucheng Li</b>, Frank Guerin, Chenghua Lin",
+              conference: "FigLang@EMNLP 2022",
+              image: "figures/sentiment.png",
+              code: "https://github.com/liyucheng09/Metaphors_are_more_emotional",
+              zhihu: "https://zhuanlan.zhihu.com/p/600835471",
             });
           </script>
 
           <tr>
-            <td width="25%" id="distill_arow-img"></td>
-            <td valign="top" width="75%" id="distill_arow-txt"></td>
+            <td width="25%" id="cm-gen-img"></td>
+            <td valign="top" width="75%" id="cm-gen-txt"></td>
           </tr>
+
           <script type="text/javascript">
             createProjectElement(
-              id = "distill_arow", {
-              title: "How and When Adversarial Robustness Transfers in Knowledge Distillation?",
-              paper_url: "https://arxiv.org/abs/2110.12072",
-              authors: "<b> Rulin Shao </b>, Jinfeng Yi, Pin-Yu Chen, Cho-Jui Hsieh",
-              conference: "ARoW in European Conference on Computer Vision (ECCV 2022)",
-              image: "figures/arow_23.PNG",
-              others: null
+              id = "cm-gen", {
+              title: "CM-Gen: A Neural Framework for Chinese Metaphor Generation with Explicit Context Modelling",
+              paper_url: "https://aclanthology.org/2022.coling-1.563/",
+              authors: "<b>Yucheng Li</b>, Chenghua Lin, Frank Guerin",
+              conference: "COLING 2022",
+              image: "figures/cm-gen.png",
+              code: "https://github.com/liyucheng09/Metaphor_Generator",
+              zhihu: "https://zhuanlan.zhihu.com/p/572740322",
             });
           </script>
 
           <tr>
-            <td width="25%" id="fl_jmir-img"></td>
-            <td valign="top" width="75%" id="fl_jmir-txt"></td>
+            <td width="25%" id="inlg22-img"></td>
+            <td valign="top" width="75%" id="inlg22-txt"></td>
           </tr>
+
           <script type="text/javascript">
             createProjectElement(
-              id = "fl_jmir", {
-              title: "Stochastic Channel-Based Federated Learning With Neural Network Pruning for Medical Data Privacy Preservation: Model Development and Experimental Validation",
-              paper_url: "https://formative.jmir.org/2020/12/e17265/",
-              authors: "<b> Rulin Shao </b>, Hongyu He, Ziwei Chen, Hui Liu, Dianbo Liu",
-              conference: "Journal of Medical Internet Research (JMIR) Form Res 2020;4(12):e17265, DOI: 10.2196/17265, PMID:33350391",
-              image: "figures/jmir_23.PNG",
-              others: null
+              id = "inlg22", {
+              title: "Nominal Metaphor Generation with Multitask Learning",
+              paper_url: "https://arxiv.org/abs/2206.05195",
+              authors: "<b>Yucheng Li</b>, Chenghua Lin, Frank Guerin",
+              conference: "INLG 2022",
+              image: "figures/inlg22.png",
+              code: "https://github.com/liyucheng09/Metaphor_Generator"
             });
           </script>
-          
-          
-          <!-- Awards -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
           <tr>
-            <td width="100%" valign="middle">
-              <heading>Awards</heading>
-            </td>
+            <td width="25%" id="nlg_survey-img"></td>
+            <td valign="top" width="75%" id="nlg_survey-txt"></td>
           </tr>
+
+          <script type="text/javascript">
+            createProjectElement(
+              id = "nlg_survey", {
+              title: "Recent Advances in Neural Text Generation: A Task-Agnostic Survey",
+              paper_url: "https://arxiv.org/abs/2203.03047",
+              authors: "Chen Tang, Frank Guerin, <b>Yucheng Li</b>, Chenghua Lin",
+              conference: "preprint",
+              image: "figures/nlg_survey.png"
+            });
+          </script>
+
+          <tr>
+            <td width="25%" id="openie-img"></td>
+            <td valign="top" width="75%" id="openie-txt"></td>
+          </tr>
+
+          <script type="text/javascript">
+            createProjectElement(
+              id = "openie", {
+              title: "Au Argument Extraction Decoder in Open Information Extraction",
+              paper_url: "https://link.springer.com/chapter/10.1007/978-3-030-72113-8_21",
+              authors: "<b>Yucheng Li</b>, Yan Yang, Qinmin Hu, Chengcai Chen, Liang He",
+              conference: "ECIR 2021",
+              image: "figures/openie.png"
+            });
+          </script>
+
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          
-          <tr>
-            <td width="25%" id="secure_inference_ara-img"></td>
-            <td valign="top" width="75%" id="secure_inference_ara-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "secure_inference_ara", {
-              title: "A Faster and More Accurate Secure Model Serving Framework on the Cloud",
-              authors: "PI: Eric P. Xing",
-              paper_url: "awards/amazon_funding_secure_serving.pdf",
-              conference: "Amazon Research Awards ($80000)",
-              image: "figures/secure_inference_ara.PNG",
-              others: null
-            });
-          </script>
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <br>
-                <p align="right">
-                  <font size="2">
-                    <a href="https://dachengli1.github.io/">My boyfriend asked me to put him here :). He is awesome!</a>
-                  </font>
-                </p>
-              </td>
-            </tr>
-          </table>
-          <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-7580334-1");
-              pageTracker._trackPageview();
-            } catch (err) {}
-          </script>
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
       </td>
     </tr>
   </table>

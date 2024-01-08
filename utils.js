@@ -1,4 +1,4 @@
-function createProjectElement(id, project){
+function createProjectElement(id, project) {
     /* Create an element in Project
     tag: some tags
     title: title of the project or publications
@@ -6,6 +6,7 @@ function createProjectElement(id, project){
     authors: authors
     conference: publication venue
     image (optional): directory to project image
+    code (optional): link to the code
     others (optional): anything else
     */
     if (project.tag == null)
@@ -13,13 +14,16 @@ function createProjectElement(id, project){
     if (project.others == null)
         project.others = "";
 
-    html_img = `<img src='${project.image}' style="max-width: 150px"></div></div>`
-    html_txt = `<p>
+    var html_img = `<img src='${project.image}' style="max-width: 180px"></div></div>`;
+    var codeLink = project.code ? `<a href="${project.code}">[code]</a>` : "";
+    var zhihu = project.zhihu ? `<a href="${project.zhihu}">[知乎]</a>` : "";
+    
+    var html_txt = `<p>
       <a href="${project.paper_url}"><papertitle>${project.title}</papertitle></a>
       <br>
       ${project.authors}
       <br>
-      <em>${project.conference}</em>
+      <em>${project.conference}</em> &nbsp; ${codeLink} &nbsp; ${zhihu}
       <br>
       ${project.others}`
 
