@@ -136,6 +136,23 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <tr>
+            <td width="25%" id="minference-img"></td>
+            <td valign="top" width="75%" id="minference-txt"></td>
+          </tr>
+          <script type="text/javascript">
+            createProjectElement(
+              id = "minference", {
+              title: "MInference 1.0: Accelerating Pre-filling for Long-Context LLMs via Dynamic Sparse Attention",
+              paper_url: "https://arxiv.org/pdf/2407.02490",
+              authors: "Huiqiang Jiang*, <b>Yucheng Li</b>*, Chengruidong Zhang*, Qianhui Wu, Xufang Luo, Surin Ahn, Zhenhua Han, Amir H. Abdi, Dongsheng Li, Chin-Yew Lin, Yuqing Yang, Lili Qiu",
+              conference: "NeurIPS 2024 (Spotlight)",
+              image: "figures/minference.png",
+              code: "https://github.com/microsoft/MInference",
+              blog: "https://huggingface.co/blog/liyucheng/minference10",
+            });
+          </script>
+
+          <tr>
             <td width="25%" id="iconicity-img"></td>
             <td valign="top" width="75%" id="iconicity-txt"></td>
           </tr>
@@ -166,19 +183,20 @@
           </script>
 
           <tr>
-            <td width="25%" id="minference-img"></td>
-            <td valign="top" width="75%" id="minference-txt"></td>
+            <td width="25%" id="contamination-detector-img"></td>
+            <td valign="top" width="75%" id="contamination-detector-txt"></td>
           </tr>
           <script type="text/javascript">
             createProjectElement(
-              id = "minference", {
-              title: "MInference 1.0: Accelerating Pre-filling for Long-Context LLMs via Dynamic Sparse Attention",
-              paper_url: "https://arxiv.org/pdf/2407.02490",
-              authors: "Huiqiang Jiang, <b>Yucheng Li</b>, Chengruidong Zhang, Qianhui Wu, Xufang Luo, Surin Ahn, Zhenhua Han, Amir H. Abdi, Dongsheng Li, Chin-Yew Lin, Yuqing Yang, Lili Qiu",
-              conference: "preprint",
-              image: "figures/minference.png",
-              code: "https://github.com/microsoft/MInference",
-              blog: "https://huggingface.co/blog/liyucheng/minference10",
+              id = "contamination-detector", {
+              title: "An Open Source Data Contamination Report for Large Language Models",
+              paper_url: "https://arxiv.org/pdf/2310.17589.pdf",
+              authors: "<b>Yucheng Li</b>, Yunhao Guo, Frank Guerin, Chenghua Lin",
+              conference: "EMNLP 2024 Findings",
+              image: "figures/cd.png",
+              code: "https://github.com/liyucheng09/Contamination_Detector",
+              zhihu: "https://zhuanlan.zhihu.com/p/666490713",
+              others: null
             });
           </script>
 
@@ -197,24 +215,6 @@
               code: "https://github.com/liyucheng09/llm-compressive",
               zhihu: "https://zhuanlan.zhihu.com/p/681449063",
               demo: "https://liyucheng09.github.io/llm-compressive/",
-              others: null
-            });
-          </script>
-
-          <tr>
-            <td width="25%" id="contamination-detector-img"></td>
-            <td valign="top" width="75%" id="contamination-detector-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "contamination-detector", {
-              title: "An Open Source Data Contamination Report for Large Language Models",
-              paper_url: "https://arxiv.org/pdf/2310.17589.pdf",
-              authors: "<b>Yucheng Li</b>, Yunhao Guo, Frank Guerin, Chenghua Lin",
-              conference: "EMNLP 2024 Findings",
-              image: "figures/cd.png",
-              code: "https://github.com/liyucheng09/Contamination_Detector",
-              zhihu: "https://zhuanlan.zhihu.com/p/666490713",
               others: null
             });
           </script>
@@ -265,7 +265,7 @@
               id = "acl23", {
               title: "Metaphor Detection via Explicit Basic Meanings Modelling",
               paper_url: "https://aclanthology.org/2023.acl-short.9/",
-              authors: "<b>Yucheng Li</b>, Shun Wang, Chenghua Lin, Frank Guerin",
+              authors: "<b>Yucheng Li</b>*, Shun Wang*, Chenghua Lin, Frank Guerin",
               conference: "ACL 2023",
               image: "figures/acl23.png",
               code: "https://github.com/liyucheng09/BasicBERT",
@@ -282,7 +282,7 @@
               id = "framebert", {
               title: "FrameBERT: Conceptual Metaphor Detection with Frame Embedding Learning",
               paper_url: "https://aclanthology.org/2023.eacl-main.114.pdf",
-              authors: "<b>Yucheng Li</b>, Shun Wang, Chenghua Lin, Frank Guerin, Loic Barrault",
+              authors: "<b>Yucheng Li</b>*, Shun Wang*, Chenghua Lin, Frank Guerin, Loic Barrault",
               conference: "EACL 2023",
               image: "figures/framebert.png",
               code: "https://github.com/liyucheng09/MetaphorFrame",
@@ -299,7 +299,7 @@
               id = "roppt", {
               title: "Metaphor Detection via Explicit Basic Meanings Modelling",
               paper_url: "https://aclanthology.org/2023.eacl-main.102.pdf",
-              authors: "Shun Wang, <b>Yucheng Li</b>, Chenghua Lin, Loic Barrault, Frank Guerin",
+              authors: "Shun Wang*, <b>Yucheng Li</b>*, Chenghua Lin, Loic Barrault, Frank Guerin",
               conference: "EACL 2023",
               image: "figures/roppt.png",
               code: "https://github.com/MajiBear000/RoPPT",
